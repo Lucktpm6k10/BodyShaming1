@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_ImageMovie"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/movie1" />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_NameMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="Time"
+                android:textColor="#000"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/iv_ImageMovie" />
+
+            <TextView
+                android:id="@+id/tv_ConttentMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Yêu nhau 2 năm nhưng lo sợ bản thân sẽ không đẹp, không đủ hấp dẫn người yêu, Seh Hee (Park Ji Yun) đã tìm đến dao kéo để cải thiện ngoại hình. Tuy nhiên, định mệnh trớ trêu, dù có cố gắng bao nhiêu, thì Seh Hee với một vẻ ngoài long lanh hơn vẫn không thể thay thế Seh Hee trong quá khứ mà bạn trai cô từng yêu. Câu chuyện ngày càng tồi tệ hơn, khi bạn trai của Seh Hee cũng quyết định dùng đến dao kéo nhằm mục đích trả thù bạn gái. Lạm dụng phẫu thuật thẩm mỹ, tình yêu của cả hai đã trở thành bi kịch.
+Nhận được nhiều phản ứng tốt từ phía khán giả, “Thời gian” là lời cảnh tỉnh đến những ai đang muốn lạm dụng dao kéo một cách quá đà.
+"
+                android:textSize="@dimen/_6sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/iv_ImageMovie"
+                app:layout_constraintStart_toEndOf="@+id/iv_ImageMovie"
+                app:layout_constraintTop_toBottomOf="@id/tv_NameMovie" />
+
+            <Button
+                android:layout_gravity="bottom"
+                android:id="@+id/btn_WatchMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Xem Phim"
+                android:textSize="@dimen/_5sdp"
+               />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
